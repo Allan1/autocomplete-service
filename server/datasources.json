@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoDB": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "${MONGO_INITDB_DATABASE}",
+    "name": "mongoDB",
+    "user": "${MONGO_INITDB_ROOT_USERNAME}",
+    "password": "${MONGO_INITDB_ROOT_PASSWORD}",
+    "connector": "mongodb"
+  }
+}
