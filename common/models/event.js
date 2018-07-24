@@ -29,7 +29,7 @@ module.exports = function(Event) {
         {arg: 'query', type: 'string', description: 'String query'},
       ],
       returns: {
-        arg: 'data', type: 'object', root: true,
+        arg: 'data', type: ['Event'], root: true,
       },
       http: {path: '/autocomplete', verb: 'get'},
     }
