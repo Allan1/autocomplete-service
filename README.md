@@ -7,7 +7,6 @@
 ## Project setup
 
 - Define environment variables in the .env file. See .env.example for environment variables names.
-- Configure host, port and restApiRoot on server/config.json
 - Start with: docker-compose up -d
 - Default api endpoint: http://localhost:3000/api/
 
