@@ -13,7 +13,7 @@
 
 ## Collector API
 
-- POST /api/actions/
+- POST /actions/
 
   Example input data:
 
@@ -36,7 +36,7 @@
 
 ## Autocomplete
 
-- GET /api/events/autocomplete
+- GET /events/autocomplete
 
   Example input:
 

@@ -20,6 +20,16 @@
       "foreignKey": "eventId"
     }
   },
+  "indexes": {
+    "name_index": {
+      "keys": {
+        "name": 1
+      },
+      "options": {
+        "unique": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
