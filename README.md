@@ -20,7 +20,7 @@
   ```
   {
     "timestamp": "2018-07-24T14:02:14.236Z",
-    "event": "buy"
+    "event": "login"
   }
   ```
 
@@ -37,12 +37,25 @@
 ## Autocomplete
 
 - GET /events/autocomplete
+  
+  Accepts arguments:
+
+    - query (String)
+  
+      Word used to look for suggestions, example: "foo";
+  
+    - filter (Object)
+  
+      Filter defining fields, where, include, offset, and limit. Example: {limit: 10, skip: 20}
 
   Example input:
 
   ```
   {
-    "query": "bu"
+    "query": "lo",
+    "filter: {
+      "limit": 2
+    }
   }
   ```
 
@@ -51,8 +64,12 @@
   ```
   [
     {
-      "name": "buy",
+      "name": "login",
       "id": "5b5735ae7c1915001a6e4377"
+    },
+    {
+      "name": "logout",
+      "id": "5b5735ae7c1915001a6e4378"
     }
   ]
   ```
