@@ -3,20 +3,20 @@ version: '2'
 services:
   app:
     build: .
-    image: api
+    image: autocomplete_api
     ports:
       - "3000:3000"
     depends_on:
       - mongo
     network_mode: "host"
-    container_name: api_container
+    container_name: autocomplete_api_container
     command: forever server/server.js
     env_file: .env
   mongo:
     image: mongo:3
     ports:
       - "27017:27017"
-    container_name: mongo_container
+    container_name: autocomplete_mongo_container
     command: --auth
     env_file: .env
     environment:
