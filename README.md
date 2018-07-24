@@ -8,6 +8,7 @@
 
 - Define environment variables in the .env file. See .env.example for environment variables names.
 - Start with: docker-compose up -d
+- Stop with: docker-compose down
 - Default api endpoint: http://localhost:3000/api/
 
 ## Collector API
